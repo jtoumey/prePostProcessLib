@@ -1,2 +1,2 @@
-# preprocessLib
-Library of preprocessing tools for CFD. 
+# preProcessLib
+Library of pre-processing tools for CFD. 
