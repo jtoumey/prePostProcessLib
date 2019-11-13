@@ -1,5 +1,11 @@
 class VertexList:
+    """Collects the vertex list for a given blockMeshDict and writes it to a buffer.
 
+    Progressively or parametrically add vertices to the vertex list and then return a buffer with the vertex information.
+    This buffer may then be written to the desired dictionary.
+    """
+
+    # Vector component lists
     comp_x = []
     comp_y = []
     comp_z = []
@@ -31,7 +37,13 @@ class VertexList:
 
 
 class Block():
+    """Collects information for a given blockMesh block and writes it to a buffer.
 
+    Progressively or parametrically add blocks and then return a buffer with the block information.
+    This buffer may then be written to the desired dictionary.
+    """
+
+    # Vertex IDs corresponding to those in the VertexList
     vertex_list = []
     block_type = 'hex'
     grading = 'simpleGrading'
