@@ -1,5 +1,5 @@
 # preProcessLib
-Library of pre-processing tools for CFD. 
+Library of pre- and post-processing tools for CFD. 
 
 ## OpenFOAM
 The tools for OpenFOAM are designed to make simpler the generation of dictionaries, including the blockMeshDict file.
