@@ -1,2 +1,6 @@
 # Compiled python files
 *.pyc
+
+# Data files
+*.dat
+*.log
