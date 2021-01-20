@@ -8,9 +8,17 @@ import numpy as np
 # Main plotting routine
 def main():
 
-    # Import the text data
+    ## ---------------------------------------------------------------------- ##
+    ## IMPORT DATA
+    # For files with no header, use numpy::loadtxt
+    # flameT14 = np.loadtxt("r14_flame_t0000.50s.xy")
+
+    # For files with a header, use numpy::genfromtxt for the ability to skip the
+    # header lines 
     solidHtInfo = np.genfromtxt("./wallHeatFluxFlame.dat", skip_header=2)
 
+    ## ---------------------------------------------------------------------- ##
+    ## GENERATE FIGURE
     # Generate a figure and axes with subplot
     fig0 = plt.figure(figsize=(5, 7))
     ax0 = fig0.add_subplot(2, 1, 1)
@@ -35,7 +43,6 @@ def main():
     # Display and then save the figure 
     plt.show()
     fig0.savefig(r'sampleFig.pdf', format='pdf', dpi=900)
-
 
 if __name__ == '__main__':
     main()
