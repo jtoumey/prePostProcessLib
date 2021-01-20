@@ -10,11 +10,10 @@ def main():
 
     ## ---------------------------------------------------------------------- ##
     ## IMPORT DATA
-    # For files with no header, use numpy::loadtxt
-    # flameT14 = np.loadtxt("r14_flame_t0000.50s.xy")
+    # For files numeric data only, use numpy::loadtxt
+    # flameT14 = np.loadtxt("r14_flame_t0000.50s.xy", skiprows=2)
 
-    # For files with a header, use numpy::genfromtxt for the ability to skip the
-    # header lines 
+    # For files with mixed data types in the columns, use numpy::genfromtxt 
     solidHtInfo = np.genfromtxt("./wallHeatFluxFlame.dat", skip_header=2)
 
     ## ---------------------------------------------------------------------- ##
