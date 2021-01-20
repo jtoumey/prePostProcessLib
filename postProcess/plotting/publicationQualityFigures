@@ -1,0 +1,32 @@
+# Matplotlib rcparam file for creating publication-quality plots
+
+# Simplify paths by removing "invisible" points, useful for reducing
+# file size when plotting a large number of points
+path.simplify: True
+
+text.usetex: True
+font.family: serif
+
+xtick.labelsize:    14
+ytick.labelsize:    14
+axes.labelsize:     14
+legend.fontsize:    12
+
+
+# Increase the tick-mark lengths (defaults are 4 and 2)
+xtick.major.size:   6
+xtick.minor.size:   3
+xtick.direction:    in
+ytick.major.size:   6
+ytick.minor.size:   3
+ytick.direction:    in
+
+# Increase the tick-mark widths as well as the widths of lines 
+# used to draw marker edges to be consistent with the other figure
+# linewidths (defaults are all 0.5)
+xtick.major.width:      1
+ytick.major.width:      1
+xtick.minor.width:      1
+ytick.minor.width:      1
+lines.markeredgewidth:  1
+figure.figsize:         8.5, 8.5
